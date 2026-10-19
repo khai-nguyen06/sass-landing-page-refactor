@@ -1,0 +1,33 @@
+@import "../abstracts/variables";
+
+.btn {
+  display: inline-block;
+  padding: 12px 28px;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  transition: background-color $transition-speed, transform $transition-speed;
+
+  &-primary {
+    background-color: $primary-color;
+    color: $bg-white;
+
+    &:hover {
+      background-color: $primary-dark;
+      transform: translateY(-2px);
+    }
+  }
+
+  &-outline {
+    background-color: transparent;
+    border: 2px solid $bg-white;
+    color: $bg-white;
+
+    &:hover {
+      background-color: $bg-white;
+      color: $secondary-color;
+    }
+  }
+}

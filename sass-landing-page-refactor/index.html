@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page Tái Cấu Trúc Bằng SASS</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- KHỐI 1: NAVIGATION VÀ HEADER -->
+  <nav class="navbar">
+    <div class="container nav-wrapper">
+      <a href="#" class="logo">Code<span>Gym</span></a>
+      <ul class="nav-menu">
+        <li><a href="#hero">Trang chủ</a></li>
+        <li><a href="#products">Sản phẩm</a></li>
+        <li><a href="#stats">Số liệu</a></li>
+        <li><a href="#footer">Liên hệ</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="hero" id="hero">
+    <div class="container">
+      <h1>Giải Pháp Công Nghệ Đột Phá</h1>
+      <p>Nâng cao hiệu suất doanh nghiệp và tối ưu trải nghiệm khách hàng với nền tảng số thế hệ mới.</p>
+      <div class="hero-buttons">
+        <a href="#products" class="btn btn-primary">Khám phá ngay</a>
+        <a href="#stats" class="btn btn-outline">Tìm hiểu thêm</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- KHỐI 2: SẢN PHẨM NỔI BẬT -->
+  <section class="products-section" id="products">
+    <div class="container">
+      <div class="section-title">
+        <h2>Sản Phẩm Nổi Bật</h2>
+        <p>Những giải pháp phần mềm chuyên sâu được đối tác tin dùng hàng đầu</p>
+      </div>
+
+      <div class="product-grid">
+        <div class="product-card">
+          <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=600&q=80" alt="Cloud Solution">
+          <div class="product-card__content">
+            <h3>Cloud Platform</h3>
+            <p>Hạ tầng đám mây phân tán tự động mở rộng và chịu tải cao liên tục.</p>
+          </div>
+          <div class="product-card__footer">
+            <span class="price">$199/tháng</span>
+            <a href="#" class="btn btn-primary">Chi tiết</a>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=600&q=80" alt="Data Analytics">
+          <div class="product-card__content">
+            <h3>Data Analytics</h3>
+            <p>Phân tích dữ liệu doanh nghiệp thông minh với dashboard trực quan chuẩn xác.</p>
+          </div>
+          <div class="product-card__footer">
+            <span class="price">$299/tháng</span>
+            <a href="#" class="btn btn-primary">Chi tiết</a>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=600&q=80" alt="Security Shield">
+          <div class="product-card__content">
+            <h3>Cyber Shield</h3>
+            <p>Hệ thống giám sát và bảo mật dữ liệu hai lớp theo tiêu chuẩn quốc tế.</p>
+          </div>
+          <div class="product-card__footer">
+            <span class="price">$399/tháng</span>
+            <a href="#" class="btn btn-primary">Chi tiết</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- KHỐI 3: SỐ LIỆU THỐNG KÊ -->
+  <section class="stats-section" id="stats">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item">
+          <h3>10M+</h3>
+          <p>Lượt truy cập/ngày</p>
+        </div>
+        <div class="stat-item">
+          <h3>99.9%</h3>
+          <p>Uptime cam kết</p>
+        </div>
+        <div class="stat-item">
+          <h3>5,000+</h3>
+          <p>Doanh nghiệp tin dùng</p>
+        </div>
+        <div class="stat-item">
+          <h3>24/7</h3>
+          <p>Hỗ trợ kỹ thuật</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- KHỐI 4: FOOTER -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <a href="#" class="logo">Code<span>Gym</span></a>
+          <p style="margin-top: 15px;">Chúng tôi cung cấp hệ thống đào tạo và giải pháp phần mềm chuyên nghiệp, đồng hành cùng sự phát triển của lập trình viên tương lai.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Sản Phẩm</h4>
+          <ul>
+            <li><a href="#">Cloud Platform</a></li>
+            <li><a href="#">Data Analytics</a></li>
+            <li><a href="#">Cyber Shield</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Tài Nguyên</h4>
+          <ul>
+            <li><a href="#">Tài liệu API</a></li>
+            <li><a href="#">Hướng dẫn cài đặt</a></li>
+            <li><a href="#">Cộng đồng hỗ trợ</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Liên Hệ</h4>
+          <ul>
+            <li><a href="#">Hà Nội &amp; TP.HCM</a></li>
+            <li><a href="#">hotro@codegym.vn</a></li>
+            <li><a href="#">024 6253 8829</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 CodeGym. All rights reserved. Refactored with SASS/SCSS.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

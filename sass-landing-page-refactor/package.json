@@ -1,0 +1,12 @@
+{
+  "name": "sass-landing-page-refactor",
+  "version": "1.0.0",
+  "description": "Tái cấu trúc CSS của Landing Page sang SASS/SCSS",
+  "scripts": {
+    "build": "sass --no-source-map --silence-deprecation=import scss/style.scss css/style.css",
+    "watch": "sass --watch --silence-deprecation=import scss/style.scss css/style.css"
+  },
+  "devDependencies": {
+    "sass": "^1.80.0"
+  }
+}

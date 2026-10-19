@@ -1,0 +1,84 @@
+@import "../abstracts/variables";
+@import "../abstracts/mixins";
+
+// Logo dùng chung cho navbar và footer
+.logo {
+  color: $bg-white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+
+  span {
+    color: $accent-color;
+  }
+}
+
+// Navbar
+.navbar {
+  background-color: $secondary-color;
+  padding: 16px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  .nav-wrapper {
+    @include flex-center(row, space-between, center);
+  }
+
+  .nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+
+    @include mobile {
+      display: none; // Giữ đơn giản trên mobile
+    }
+
+    a {
+      color: #cbd5e1;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color $transition-speed;
+
+      &:hover {
+        color: $accent-color;
+      }
+    }
+  }
+}
+
+// Hero Header
+.hero {
+  background: linear-gradient(rgba($secondary-color, 0.8), rgba($secondary-color, 0.8)),
+              url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1600&q=80') center/cover;
+  color: $bg-white;
+  text-align: center;
+  padding: 100px 20px;
+
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+
+    @include mobile {
+      font-size: 2.2rem;
+    }
+  }
+
+  p {
+    font-size: 1.2rem;
+    color: #cbd5e1;
+    max-width: 600px;
+    margin: 0 auto 30px;
+  }
+
+  .hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+
+    @include mobile {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}
